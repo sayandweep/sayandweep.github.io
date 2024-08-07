@@ -1,6 +1,6 @@
 body {
     font-size: 15pt;
-    background-image: url("/images/bg.jpg");
+    background-image: url("/images/bg2.jpg");
     background-attachment: fixed;
     background-position: center; 
     height: 100vh;
@@ -8,6 +8,8 @@ body {
     background-repeat: no-repeat;
     background-size: 1000px;
     color: floralwhite;
+  animation-name: fade;
+  animation-duration: 3s;
 }
 .font-1 {
   font-family: 'Cabinet Grotesk'
@@ -76,5 +78,18 @@ body {
   text-align: center;
   margin: 20px;
   align-items: center;
-  justify-content: center 
+  justify-content: center;
+  transition: .5s
+}
+.home-button:hover {
+  background: white;
+  color: black;
+}
+@keyframes fade {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
