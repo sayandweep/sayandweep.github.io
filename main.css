@@ -123,3 +123,15 @@ body {
         height: 210px;
     }
 }
+@media (min-width: 786px) {
+    .photo-gallery {
+        padding: 0 130px;
+    }
+    .logo-box {
+        padding: 0px;
+        margin-bottom: 50px;
+    }
+    .logo-brand {
+        padding: 15px 30px;
+    }
+}
