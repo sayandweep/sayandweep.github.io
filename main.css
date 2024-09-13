@@ -1,15 +1,18 @@
 body {
     font-size: 15pt;
-    background-image: url("/images/bg2.jpg");
     background-attachment: fixed;
     background-position: center;
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: 1000px;
-    color: floralwhite;
-    animation-name: fade;
-    animation-duration: 3s;
+    color: black;
+    overflow-x: hidden;
+    font-family: 'Clash Display';
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .font-1 {
@@ -75,32 +78,41 @@ body {
     padding: 7px
 }
 
-.home-about {
-    text-align: center;
-    padding: 100px 0;
+.mNav {
+    padding: 20px;
 }
 
-.home-about h1 {
-    font-size: 58px
+.navInstall {
+    font-family: 'Clash Display';
+    font-weight: 600;
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+
+.home-about {
+    text-align: left;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.hBrand {
+    font-size: 80px;
+    line-height: 4rem;
+}
+
+.home-about .hBrand {
+    animation-name: slidein;
+    animation-duration: 0s;
 }
 
 .home-about p {
-    font-size: 13px;
-    padding: 0 20px
+    font-size: 25px;
+    font-weight: 500;
 }
 
-.home-button {
-    padding: 20px;
-    text-align: center;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-    transition: .5s
-}
-
-.home-button:hover {
-    background: white;
-    color: black;
+.pBtn {
+    text-align: left;
+    padding: 40px 0 10px 0;
 }
 
 @keyframes fade {
@@ -113,9 +125,39 @@ body {
     }
 }
 
+@keyframes slidein {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .navBtn {
     font-size: 12px;
     margin-left: 10px;
+}
+
+.sMedias h3 {
+    font-size: 13px !important;
+    font-style: italic;
+}
+
+.sMedias ul li:nth-child(1) {
+    color: blue
+}
+
+.fTr {
+    justify-content: space-between;
+    padding: 20px
+}
+
+.cTact {
+    border-bottom: solid black .1px;
+    padding-bottom: 10px
 }
 
 @media (max-width: 600px) {
@@ -133,5 +175,19 @@ body {
     }
     .logo-brand {
         padding: 15px 30px;
+    }
+    body {
+        padding: 40px;
+    }
+    .home-about .hBrand {
+        animation-name: slidein;
+        animation-duration: 0s;
+        font-size: 200px;
+        line-height: 9rem;
+    }
+    .home-about p {
+        font-size: 25px;
+        font-weight: 500;
+        padding-right: 750px;
     }
 }
