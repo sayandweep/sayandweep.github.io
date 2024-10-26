@@ -37,19 +37,22 @@
 
 <body style="background-image: url('');">
 
-    <div class="logo-box">
-        <div class="backdrop-blur-lg logo-brand text-black bg-white/50 font-2">
+    <div id="marketing-banner" tabindex="-1" class="backdrop-blur-lg fixed z-50 flex flex-col md:flex-row justify-between w-[calc(100%-2rem)] p-4 -translate-x-1/2 bg-black/70 rounded-lg shadow-sm lg:max-w-7xl left-1/2 bottom-6">
+    <div class="flex flex-col items-start mb-3 me-4 md:items-center md:flex-row md:mb-0">
 
-            <div class="flex" onclick="location.replace('/')">Sayandweep</div>
+        <a href="/" class="inline-block flex items-center mb-2 border-gray-200 md:pe-4 md:me-4 md:border-e md:mb-0 dark:border-gray-600">
+            <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">Sayandweep.</span>
+        </a>
 
-            <div class="flex">
-                <a href="#posters" class="navBtn">-Posters</a>             
-                <a href="#thumbs" class="navBtn">-Thumbs</a>
-                <a href="#videos" class="navBtn">-Videos</a>
-                <a href="mailto:sayandweepbiswas@gmail.com" class="navBtn">-Contact</a>
-            </div>
-        </div>
+        <span class="flex inline-block items-center text-sm font-normal text-gray-500 dark:text-gray-400 font-1">Previous Works & Demos</span>
     </div>
+    <div class="flex items-center flex-shrink-0">
+        <a href="#posters" class="font-1 px-3 py-2 me-2 text-xs font-medium text-white bg-gray-600 rounded-lg hover:bg-gray-500 ">Posters</a>
+        <a href="#thumbs" class="font-1 px-3 py-2 me-2 text-xs font-medium text-white bg-gray-600 rounded-lg hover:bg-gray-500 ">Thumbs</a>
+        <a href="#videos" class="font-1 px-3 py-2 me-2 text-xs font-medium text-white bg-gray-600 rounded-lg hover:bg-gray-500 ">Video</a>
+        <a href="mailto:sayandweepbiswas@gmail.com" class="font-1 px-3 py-2 me-2 text-xs font-medium text-white bg-gray-600 rounded-lg hover:bg-gray-500 ">Contact</a>
+    </div>
+</div>
 
     <div class="photo-gallery font-2" id="posters">
         <h1 class="mb-4 font-bold" style="font-size: 30px; color: black">Poster Designs</h1>
